@@ -1,0 +1,6 @@
+-r requirements.txt
+# Additional table export and numerical dependencies used by retained analyses.
+tabulate
+threadpoolctl
+pyarrow
+# UMAP figures and the dashboard use the separately locked dashboard environment.

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the associated ISBC manuscript when using this software."
+title: "ISBC: Interpretable Sparse Binary Coding of Pretrained Text Embeddings"
+type: software
+authors:
+  - family-names: Iacus
+    given-names: Stefano M.
+  - family-names: Qi
+    given-names: Haodong
+license: MIT
+version: 0.1.0

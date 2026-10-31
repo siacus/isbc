@@ -1,0 +1,314 @@
+[
+  {
+    "name": "20ng_qwen_all_fixed_balance",
+    "source": "runs/20ng_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/20ng_qwen_all_fixed_balance.json",
+    "input": "data/20ng/20ng_all_ready.csv",
+    "output_dir": "runs/20ng_qwen_all_fixed_balance",
+    "rows": 18221
+  },
+  {
+    "name": "agnews_embeddinggemma2_all_fixed_balance",
+    "source": "runs/agnews_embeddinggemma2_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_embeddinggemma2_all_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_embeddinggemma2_all_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_harrier_all_fixed_balance",
+    "source": "runs/agnews_harrier_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_harrier_all_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_harrier_all_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_minilm_all_fixed_balance",
+    "source": "runs/agnews_minilm_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_minilm_all_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_minilm_all_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_nvidia_all_fixed_balance",
+    "source": "runs/agnews_nvidia_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_nvidia_all_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_nvidia_all_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_fixed_balance",
+    "source": "runs/agnews_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_k32_target16_fixed_balance",
+    "source": "runs/agnews_qwen_all_k32_target16_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_k32_target16_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_k32_target16_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_k32_target6_fixed_balance",
+    "source": "runs/agnews_qwen_all_k32_target6_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_k32_target6_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_k32_target6_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_k32_target8_fixed_balance",
+    "source": "runs/agnews_qwen_all_k32_target8_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_k32_target8_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_k32_target8_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_k8_target4_fixed_balance",
+    "source": "runs/agnews_qwen_all_k8_target4_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_k8_target4_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_k8_target4_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_all_k8_target6_fixed_balance",
+    "source": "runs/agnews_qwen_all_k8_target6_fixed_balance/best/run_config.json",
+    "config": "configs/training/agnews_qwen_all_k8_target6_fixed_balance.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_all_k8_target6_fixed_balance",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_full_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_full_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_full_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_full_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_full_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_full_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_full_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_full_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_full_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_full_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_full_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_full_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_activity_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_no_activity_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_activity_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_activity_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_activity_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_no_activity_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_activity_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_activity_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_activity_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_no_activity_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_activity_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_activity_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_balance_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_no_balance_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_balance_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_balance_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_balance_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_no_balance_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_balance_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_balance_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_balance_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_no_balance_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_balance_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_balance_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_decorrelation_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_decorrelation_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_decorrelation_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_decorrelation_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_decorrelation_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_decorrelation_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_decorrelation_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_entropy_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_no_entropy_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_entropy_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_entropy_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_entropy_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_no_entropy_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_entropy_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_entropy_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_entropy_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_no_entropy_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_entropy_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_entropy_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_reconstruction_seed1234",
+    "source": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed1234/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_reconstruction_seed1234.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed1234",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_reconstruction_seed2025",
+    "source": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed2025/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_reconstruction_seed2025.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed2025",
+    "rows": 127600
+  },
+  {
+    "name": "agnews_qwen_loss_ablation_no_reconstruction_seed31415",
+    "source": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed31415/best/run_config.json",
+    "config": "configs/training/agnews_qwen_loss_ablation_no_reconstruction_seed31415.json",
+    "input": "data/agnews/agnews_all_ready.csv",
+    "output_dir": "runs/agnews_qwen_loss_ablation_no_reconstruction_seed31415",
+    "rows": 127600
+  },
+  {
+    "name": "airline_qwen_fixed_balance",
+    "source": "runs/airline_qwen_fixed_balance/best/run_config.json",
+    "config": "configs/training/airline_qwen_fixed_balance.json",
+    "input": "data/airline/airline_ready.csv",
+    "output_dir": "runs/airline_qwen_fixed_balance",
+    "rows": 14485
+  },
+  {
+    "name": "climmig_qwen_fixed_balance",
+    "source": "runs/climmig_qwen_fixed_balance/best/run_config.json",
+    "config": "configs/training/climmig_qwen_fixed_balance.json",
+    "input": "data/climmig/climmig_ready.csv",
+    "output_dir": "runs/climmig_qwen_fixed_balance",
+    "rows": 5545
+  },
+  {
+    "name": "fakenewsnet_qwen_fixed_balance",
+    "source": "runs/fakenewsnet_qwen_fixed_balance/best/run_config.json",
+    "config": "configs/training/fakenewsnet_qwen_fixed_balance.json",
+    "input": "data/fakenews/fakenews_ready.csv",
+    "output_dir": "runs/fakenewsnet_qwen_fixed_balance",
+    "rows": 21786
+  },
+  {
+    "name": "goemotions_qwen_fixed_balance",
+    "source": "runs/goemotions_qwen_fixed_balance/best/run_config.json",
+    "config": "configs/training/goemotions_qwen_fixed_balance.json",
+    "input": "data/goemotions/goemotions_ready.csv",
+    "output_dir": "runs/goemotions_qwen_fixed_balance",
+    "rows": 45432
+  },
+  {
+    "name": "mixed_qwen_all_fixed_balance",
+    "source": "runs/mixed_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/mixed_qwen_all_fixed_balance.json",
+    "input": "data/mixed/mixed_ready.csv",
+    "output_dir": "runs/mixed_qwen_all_fixed_balance",
+    "rows": 111000
+  },
+  {
+    "name": "pheme_qwen_fixed_balance",
+    "source": "runs/pheme_qwen_fixed_balance/best/run_config.json",
+    "config": "configs/training/pheme_qwen_fixed_balance.json",
+    "input": "data/pheme/pheme_ready.csv",
+    "output_dir": "runs/pheme_qwen_fixed_balance",
+    "rows": 5802
+  },
+  {
+    "name": "tweeteval_emotion_qwen_all_fixed_balance",
+    "source": "runs/tweeteval_emotion_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/tweeteval_emotion_qwen_all_fixed_balance.json",
+    "input": "data/tweeteval/emotion/emotion_all_ready.csv",
+    "output_dir": "runs/tweeteval_emotion_qwen_all_fixed_balance",
+    "rows": 4678
+  },
+  {
+    "name": "tweeteval_hate_qwen_all_fixed_balance",
+    "source": "runs/tweeteval_hate_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/tweeteval_hate_qwen_all_fixed_balance.json",
+    "input": "data/tweeteval/hate/hate_all_ready.csv",
+    "output_dir": "runs/tweeteval_hate_qwen_all_fixed_balance",
+    "rows": 11961
+  },
+  {
+    "name": "tweeteval_offensive_qwen_all_fixed_balance",
+    "source": "runs/tweeteval_offensive_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/tweeteval_offensive_qwen_all_fixed_balance.json",
+    "input": "data/tweeteval/offensive/offensive_all_ready.csv",
+    "output_dir": "runs/tweeteval_offensive_qwen_all_fixed_balance",
+    "rows": 12776
+  },
+  {
+    "name": "tweeteval_sentiment_qwen_all_fixed_balance",
+    "source": "runs/tweeteval_sentiment_qwen_all_fixed_balance/best/run_config.json",
+    "config": "configs/training/tweeteval_sentiment_qwen_all_fixed_balance.json",
+    "input": "data/tweeteval/sentiment/sentiment_all_ready.csv",
+    "output_dir": "runs/tweeteval_sentiment_qwen_all_fixed_balance",
+    "rows": 57899
+  }
+]

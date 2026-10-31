@@ -1,0 +1,218 @@
+[
+  {
+    "destination": "runs/agnews_embedding_comparison/all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/agnews_qwen_all_fixed_balance",
+    "encoded": "runs/agnews_qwen_all_fixed_balance/encoded_agnews_all_ready_best.csv",
+    "labels": "data/agnews/agnews_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/20ng_embedding_comparison/all_fixed_balance_label_coarse/factor_collection_comparison.json",
+    "run_dir": "runs/20ng_qwen_all_fixed_balance",
+    "encoded": "runs/20ng_qwen_all_fixed_balance/encoded_20ng_all_ready_best.csv",
+    "labels": "data/20ng/20ng_all.csv",
+    "label_column": "label_coarse",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/20ng_embedding_comparison/all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/20ng_qwen_all_fixed_balance",
+    "encoded": "runs/20ng_qwen_all_fixed_balance/encoded_20ng_all_ready_best.csv",
+    "labels": "data/20ng/20ng_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/airline_embedding_comparison/all_fixed_balance_airline/factor_collection_comparison.json",
+    "run_dir": "runs/airline_qwen_fixed_balance",
+    "encoded": "runs/airline_qwen_fixed_balance/encoded_airline_ready_best.csv",
+    "labels": "data/airline/airline_labels.csv",
+    "label_column": "airline",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/airline_embedding_comparison/all_fixed_balance_airline_sentiment/factor_collection_comparison.json",
+    "run_dir": "runs/airline_qwen_fixed_balance",
+    "encoded": "runs/airline_qwen_fixed_balance/encoded_airline_ready_best.csv",
+    "labels": "data/airline/airline_labels.csv",
+    "label_column": "airline_sentiment",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/airline_embedding_comparison/all_fixed_balance_sentiment_fine/factor_collection_comparison.json",
+    "run_dir": "runs/airline_qwen_fixed_balance",
+    "encoded": "runs/airline_qwen_fixed_balance/encoded_airline_ready_best.csv",
+    "labels": "data/airline/airline_labels.csv",
+    "label_column": "sentiment_fine",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/airline_embedding_comparison/all_fixed_balance_sentiment_x_airline/factor_collection_comparison.json",
+    "run_dir": "runs/airline_qwen_fixed_balance",
+    "encoded": "runs/airline_qwen_fixed_balance/encoded_airline_ready_best.csv",
+    "labels": "data/airline/airline_labels.csv",
+    "label_column": "sentiment_x_airline",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/goemotions_embedding_comparison/all_fixed_balance_label_grouped/factor_collection_comparison.json",
+    "run_dir": "runs/goemotions_qwen_fixed_balance",
+    "encoded": "runs/goemotions_qwen_fixed_balance/encoded_goemotions_ready_best.csv",
+    "labels": "data/goemotions/goemotions_labels.csv",
+    "label_column": "label_grouped",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/goemotions_embedding_comparison/all_fixed_balance_label_primary/factor_collection_comparison.json",
+    "run_dir": "runs/goemotions_qwen_fixed_balance",
+    "encoded": "runs/goemotions_qwen_fixed_balance/encoded_goemotions_ready_best.csv",
+    "labels": "data/goemotions/goemotions_labels.csv",
+    "label_column": "label_primary",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/tweeteval_embedding_comparison/emotion_all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/tweeteval_emotion_qwen_all_fixed_balance",
+    "encoded": "runs/tweeteval_emotion_qwen_all_fixed_balance/encoded_emotion_all_ready_best.csv",
+    "labels": "data/tweeteval/emotion/emotion_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/tweeteval_embedding_comparison/hate_all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/tweeteval_hate_qwen_all_fixed_balance",
+    "encoded": "runs/tweeteval_hate_qwen_all_fixed_balance/encoded_hate_all_ready_best.csv",
+    "labels": "data/tweeteval/hate/hate_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/tweeteval_embedding_comparison/offensive_all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/tweeteval_offensive_qwen_all_fixed_balance",
+    "encoded": "runs/tweeteval_offensive_qwen_all_fixed_balance/encoded_offensive_all_ready_best.csv",
+    "labels": "data/tweeteval/offensive/offensive_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/tweeteval_embedding_comparison/sentiment_all_fixed_balance_label_name/factor_collection_comparison.json",
+    "run_dir": "runs/tweeteval_sentiment_qwen_all_fixed_balance",
+    "encoded": "runs/tweeteval_sentiment_qwen_all_fixed_balance/encoded_sentiment_all_ready_best.csv",
+    "labels": "data/tweeteval/sentiment/sentiment_all.csv",
+    "label_column": "label_name",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/fakenewsnet_embedding_comparison/all_fixed_balance_label/factor_collection_comparison.json",
+    "run_dir": "runs/fakenewsnet_qwen_fixed_balance",
+    "encoded": "runs/fakenewsnet_qwen_fixed_balance/encoded_fakenews_ready_best.csv",
+    "labels": "data/fakenews/fakenews_labels.csv",
+    "label_column": "label",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/fakenewsnet_embedding_comparison/all_fixed_balance_source/factor_collection_comparison.json",
+    "run_dir": "runs/fakenewsnet_qwen_fixed_balance",
+    "encoded": "runs/fakenewsnet_qwen_fixed_balance/encoded_fakenews_ready_best.csv",
+    "labels": "data/fakenews/fakenews_labels.csv",
+    "label_column": "source",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/pheme_embedding_comparison/all_fixed_balance_event/factor_collection_comparison.json",
+    "run_dir": "runs/pheme_qwen_fixed_balance",
+    "encoded": "runs/pheme_qwen_fixed_balance/encoded_pheme_ready_best.csv",
+    "labels": "data/pheme/pheme_labels.csv",
+    "label_column": "event",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/pheme_embedding_comparison/all_fixed_balance_label/factor_collection_comparison.json",
+    "run_dir": "runs/pheme_qwen_fixed_balance",
+    "encoded": "runs/pheme_qwen_fixed_balance/encoded_pheme_ready_best.csv",
+    "labels": "data/pheme/pheme_labels.csv",
+    "label_column": "label",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/pheme_embedding_comparison/all_fixed_balance_label_fine/factor_collection_comparison.json",
+    "run_dir": "runs/pheme_qwen_fixed_balance",
+    "encoded": "runs/pheme_qwen_fixed_balance/encoded_pheme_ready_best.csv",
+    "labels": "data/pheme/pheme_labels.csv",
+    "label_column": "label_fine",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_about_migration/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "about_migration",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_climate_hazards/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "climate_hazards",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_discipline/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "discipline",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_migration_drivers/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "migration_drivers",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_quant_methods/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "quant_methods",
+    "k_factors": 16,
+    "target_active": 6
+  },
+  {
+    "destination": "runs/climmig_embedding_comparison/all_fixed_balance_sentiment/factor_collection_comparison.json",
+    "run_dir": "runs/climmig_qwen_fixed_balance",
+    "encoded": "runs/climmig_qwen_fixed_balance/encoded_climmig_ready_best.csv",
+    "labels": "data/climmig/climmig_labels.csv",
+    "label_column": "sentiment",
+    "k_factors": 16,
+    "target_active": 6
+  }
+]

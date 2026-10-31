@@ -1,0 +1,194 @@
+[
+  {
+    "source": "runs/fakenewsnet_embedding_comparison/all_fixed_balance_source/predictive_split.csv",
+    "file": "reproduction/splits/fakenewsnet_embedding_comparison/all_fixed_balance_source/predictive_split.csv",
+    "rows": 21786,
+    "sha256": "079cadb2d22f60893f50b824cba2a79c8b4cd714029887f96dd04b2dc4976ecf"
+  },
+  {
+    "source": "runs/fakenewsnet_embedding_comparison/all_fixed_balance_label/predictive_split.csv",
+    "file": "reproduction/splits/fakenewsnet_embedding_comparison/all_fixed_balance_label/predictive_split.csv",
+    "rows": 21786,
+    "sha256": "fbafe60e62a5b0b69a756dc7c9a1a8b44bf583836e4060b326a8f80b246cdbf1"
+  },
+  {
+    "source": "runs/airline_embedding_comparison/all_fixed_balance_airline_sentiment/predictive_split.csv",
+    "file": "reproduction/splits/airline_embedding_comparison/all_fixed_balance_airline_sentiment/predictive_split.csv",
+    "rows": 14485,
+    "sha256": "95a25b0b07cd68b471c6a62bd9e785cbed2f1d0723deb9ad5fc41df6ca6ff8f9"
+  },
+  {
+    "source": "runs/airline_embedding_comparison/all_fixed_balance_airline/predictive_split.csv",
+    "file": "reproduction/splits/airline_embedding_comparison/all_fixed_balance_airline/predictive_split.csv",
+    "rows": 14485,
+    "sha256": "099a8c8758c975be97535dfe148032832a5c7e8e257040e3a42473bf5cfff304"
+  },
+  {
+    "source": "runs/airline_embedding_comparison/all_fixed_balance_sentiment_fine/predictive_split.csv",
+    "file": "reproduction/splits/airline_embedding_comparison/all_fixed_balance_sentiment_fine/predictive_split.csv",
+    "rows": 14485,
+    "sha256": "2e4b179257f42e5e2b2d01e8907d5803fb8a476e505f012f3023c33e02197662"
+  },
+  {
+    "source": "runs/airline_embedding_comparison/all_fixed_balance_sentiment_x_airline/predictive_split.csv",
+    "file": "reproduction/splits/airline_embedding_comparison/all_fixed_balance_sentiment_x_airline/predictive_split.csv",
+    "rows": 14485,
+    "sha256": "cf3582a799de00b97c3e53bb0d1ca982def8ab8a041f6bf9d43d823ae1661001"
+  },
+  {
+    "source": "runs/tweeteval_embedding_comparison/offensive_all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/tweeteval_embedding_comparison/offensive_all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 12776,
+    "sha256": "c17ed7d7a29e16cbd1e42888c4deb5eef3f275714dce0c8cbaf8637f15fbb4a5"
+  },
+  {
+    "source": "runs/tweeteval_embedding_comparison/emotion_all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/tweeteval_embedding_comparison/emotion_all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 4678,
+    "sha256": "c697a42b64f5c37b0a0f79c2743221d21a9cb889cc5cb484483c89eac008e69d"
+  },
+  {
+    "source": "runs/tweeteval_embedding_comparison/sentiment_all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/tweeteval_embedding_comparison/sentiment_all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 57899,
+    "sha256": "bc06164eab56e1f4ef278a8982bd82414f1f8b0167f0ae1d53903c09d378f66f"
+  },
+  {
+    "source": "runs/tweeteval_embedding_comparison/hate_all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/tweeteval_embedding_comparison/hate_all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 11961,
+    "sha256": "b785b61fbeced028e0a6d71a1ad0f0063a35a22feeec09ab3a41a69d27f2fec3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/all_k8_target4_label_name/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/all_k8_target4_label_name/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/all_k32_target8_label_name/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/all_k32_target8_label_name/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/external_sparse_encoders_qwen_k16_full127600/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/external_sparse_encoders_qwen_k16_full127600/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/all_k32_target6_label_name/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/all_k32_target6_label_name/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/agnews_embedding_comparison/all_k32_target16_label_name/predictive_split.csv",
+    "file": "reproduction/splits/agnews_embedding_comparison/all_k32_target16_label_name/predictive_split.csv",
+    "rows": 127600,
+    "sha256": "3960768abe82df17eee75ce3b55f9e9479d008b0433ad907f7492b56815f3ea3"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_discipline/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_discipline/predictive_split.csv",
+    "rows": 5545,
+    "sha256": "2982a31985b872722853eb5ec49b1bd3a7f469e698c926bedbaac85007d57254"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_about_migration/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_about_migration/predictive_split.csv",
+    "rows": 5545,
+    "sha256": "c1ee9721af96f71bf217d14416ddaec3e3052647040c264e1bc92aa6807fd564"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_migration_drivers/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_migration_drivers/predictive_split.csv",
+    "rows": 5516,
+    "sha256": "05cad427b737fbcfc046c5310c35f974b81e0d84778518bc261bb64f110fdf9e"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_sentiment/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_sentiment/predictive_split.csv",
+    "rows": 5545,
+    "sha256": "565e31652b98135a943ee6449cad567c015e288e7eb72f2fb85446ff7bc7c85a"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_climate_hazards/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_climate_hazards/predictive_split.csv",
+    "rows": 5521,
+    "sha256": "3c8c0d207733410a17488024953965e3bde72f09f543f7ba4fdcee58c58f0c4e"
+  },
+  {
+    "source": "runs/climmig_embedding_comparison/all_fixed_balance_quant_methods/predictive_split.csv",
+    "file": "reproduction/splits/climmig_embedding_comparison/all_fixed_balance_quant_methods/predictive_split.csv",
+    "rows": 5545,
+    "sha256": "5fdaf8f1bd7e56f15555e036a849ca4f9e95a1434ababb8fef7edc4e21400fd2"
+  },
+  {
+    "source": "runs/mixed_embedding_comparison/all_fixed_balance_source/predictive_split.csv",
+    "file": "reproduction/splits/mixed_embedding_comparison/all_fixed_balance_source/predictive_split.csv",
+    "rows": 111000,
+    "sha256": "bb60cd5e26e0b21f64ec0555fd9b440db5f23a16f113d4f61068b50beaa0f428"
+  },
+  {
+    "source": "runs/mixed_embedding_comparison/all_fixed_balance_type/predictive_split.csv",
+    "file": "reproduction/splits/mixed_embedding_comparison/all_fixed_balance_type/predictive_split.csv",
+    "rows": 111000,
+    "sha256": "4e0aa0a2399a704e80417d1c4d38a00cc2bcfcc28e93ad882b49c99d021b1dc2"
+  },
+  {
+    "source": "runs/20ng_embedding_comparison/all_fixed_balance_label_name/predictive_split.csv",
+    "file": "reproduction/splits/20ng_embedding_comparison/all_fixed_balance_label_name/predictive_split.csv",
+    "rows": 18221,
+    "sha256": "79a1f47baf4ab2cf7f12de732e5e5e245f9fcd69b3c205dc7cab9b0faa910607"
+  },
+  {
+    "source": "runs/20ng_embedding_comparison/all_fixed_balance_label_coarse/predictive_split.csv",
+    "file": "reproduction/splits/20ng_embedding_comparison/all_fixed_balance_label_coarse/predictive_split.csv",
+    "rows": 18221,
+    "sha256": "feda334157bfd1d22e4cd47c2f3fa749d8a37e228feadab7e172d017303b108b"
+  },
+  {
+    "source": "runs/goemotions_embedding_comparison/all_fixed_balance_label_grouped/predictive_split.csv",
+    "file": "reproduction/splits/goemotions_embedding_comparison/all_fixed_balance_label_grouped/predictive_split.csv",
+    "rows": 45432,
+    "sha256": "79ddebc993f17fdfc9f2b6fb3576bf376f5e261559d6d4d077e654ca20a53dc3"
+  },
+  {
+    "source": "runs/goemotions_embedding_comparison/all_fixed_balance_label_primary/predictive_split.csv",
+    "file": "reproduction/splits/goemotions_embedding_comparison/all_fixed_balance_label_primary/predictive_split.csv",
+    "rows": 45432,
+    "sha256": "4287ec3e5b1025a4496b6fe116c2a3ea656f3386bb02e67a6d167797d6ec2e67"
+  },
+  {
+    "source": "runs/pheme_embedding_comparison/all_fixed_balance_label_fine/predictive_split.csv",
+    "file": "reproduction/splits/pheme_embedding_comparison/all_fixed_balance_label_fine/predictive_split.csv",
+    "rows": 5802,
+    "sha256": "7eecfeecc0c0b5112b345b1200397b00f75b57708e6c1f548893bf6e85869ac3"
+  },
+  {
+    "source": "runs/pheme_embedding_comparison/all_fixed_balance_label/predictive_split.csv",
+    "file": "reproduction/splits/pheme_embedding_comparison/all_fixed_balance_label/predictive_split.csv",
+    "rows": 5802,
+    "sha256": "7414d993dd4bef8e3456a6fd887ff341d1e97f0e34628779157d5b663c93b48a"
+  },
+  {
+    "source": "runs/pheme_embedding_comparison/engagement/pheme_engagement_split.csv",
+    "file": "reproduction/splits/pheme_embedding_comparison/engagement/pheme_engagement_split.csv",
+    "rows": 5802,
+    "sha256": "7414d993dd4bef8e3456a6fd887ff341d1e97f0e34628779157d5b663c93b48a"
+  },
+  {
+    "source": "runs/pheme_embedding_comparison/all_fixed_balance_event/predictive_split.csv",
+    "file": "reproduction/splits/pheme_embedding_comparison/all_fixed_balance_event/predictive_split.csv",
+    "rows": 5802,
+    "sha256": "2b98a30f9073828693a409e351385d71088010a665f8c04d21cc86832aaba227"
+  }
+]

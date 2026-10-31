@@ -1,0 +1,6 @@
+{
+  "ols_specifications": 20,
+  "max_prediction_difference": 5.107e-15,
+  "bootstrap_identical": true,
+  "rf_refit": false
+}

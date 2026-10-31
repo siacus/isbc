@@ -1,0 +1,297 @@
+[
+  {
+    "figure": "sparse_binary_factor_model.png",
+    "generators": [
+      "docs/assets/sparse_binary_factor_model.png"
+    ],
+    "status": "fixed authored asset"
+  },
+  {
+    "figure": "qwen_active_bits_training.pdf",
+    "generators": [
+      "runs/agnews_qwen_all_fixed_balance/bit_structure/paper_figures/make_activity_figure.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pmi_vs_phi_joint_activation_share.png",
+    "generators": [
+      "report_bit_structure.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_bit_community_signed_overlay.pdf",
+    "generators": [
+      "recipes/revision_6_8_20261030/plot_graph.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "bit_community_graph_posthoc_categories.png",
+    "generators": [
+      "report_bit_structure.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "bit_community_profile_label_sankey.png",
+    "generators": [
+      "report_bit_structure.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "positive_leiden_negative_overlay.pdf",
+    "generators": [
+      "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/positive_only.py",
+      "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/resolution_and_internal_patterns/analyze.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "profile_prevalence_top20_qwen.png",
+    "generators": [
+      "plot_agnews_profile_prevalence.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_agnews.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "factor_category_heatmap_qwen.png",
+    "generators": [
+      "plot_single_run_category_heatmap.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "agnews_technology_market_profile_map.pdf",
+    "generators": [
+      "analysis/plot_conjunction_profiles.py"
+    ],
+    "status": "portable replacement; validate layout"
+  },
+  {
+    "figure": "agnews_political_economy_profile_map.pdf",
+    "generators": [
+      "analysis/plot_conjunction_profiles.py"
+    ],
+    "status": "portable replacement; validate layout"
+  },
+  {
+    "figure": "qwen_corpus_profiles_20ng.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_airline.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_goemotions.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_tweeteval.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_fakenewsnet.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_pheme.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "qwen_corpus_profiles_climmig.pdf",
+    "generators": [
+      "recipes/cross_corpus_binary/plot_profiles.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "mixed_qwen_profile_sources.pdf",
+    "generators": [
+      "recipes/mixed_case_study/build_evidence.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "three_way_cross_capacity_bit_network.pdf",
+    "generators": [
+      "compare_qwen_profile_capacities.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "three_way_bit_core_triads.pdf",
+    "generators": [
+      "compare_qwen_profile_capacities.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "external_rank_densities_ours.pdf",
+    "generators": [
+      "recipes/external_top6_20261030/plots.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "external_rank_densities_hypothesaes.pdf",
+    "generators": [
+      "recipes/hypothesaes_rank_simplify_20261030/prepare.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "external_rank_densities_binarysentemb.pdf",
+    "generators": [
+      "recipes/external_top6_20261030/plots.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "binarysentemb_top6_gap.pdf",
+    "generators": [
+      "recipes/external_top6_20261030/plots.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "isbc_full_probability_densities.pdf",
+    "generators": [
+      "recipes/isbc_full_probability_density_20261030/prepare.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "external_bit_densities_hypothesaes.pdf",
+    "generators": [
+      "recipes/external_bit_singlepanel_20261030/plots.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "external_bit_densities_binarysentemb.pdf",
+    "generators": [
+      "recipes/external_bit_singlepanel_20261030/plots.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_model_comparison.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/plot_and_report.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_labelwise_bit_composition.pdf",
+    "generators": [
+      "analysis/plot_pheme_bit_composition.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_tail_conditional_bits.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/summarize_combinations.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_tail_keyword_contrasts.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/content_analysis/write_report.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_bits_only_retweet_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_bits_only_favorite_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_bits_controls_retweet_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_bits_controls_favorite_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_all_variables_retweet_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_all_variables_favorite_count_overview.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_tree_split_importance.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/plot_and_report.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_rf_importance_retweet_count.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/plot_and_report.py"
+    ],
+    "status": "source identified"
+  },
+  {
+    "figure": "pheme_log_rf_importance_favorite_count.pdf",
+    "generators": [
+      "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/plot_and_report.py"
+    ],
+    "status": "source identified"
+  }
+]

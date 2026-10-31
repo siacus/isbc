@@ -1,0 +1,32 @@
+# Generated artifacts, downloaded data and environments
+.venv/
+latent/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.external_methods/
+/data/
+/dashboard/data/*
+!/dashboard/data/agnews_qwen/
+!/dashboard/data/pheme_qwen/
+/dashboard/.venv/
+/runs/**
+!/runs/**/
+!/runs/**/*.py
+!/runs/**/*.R
+!/runs/**/*.sh
+/recipes/**
+!/recipes/**/
+!/recipes/**/*.py
+!/recipes/**/*.R
+!/recipes/**/*.md
+*.log
+*.pt
+*.npy
+*.npz
+*.rds
+
+# Local source-content reconstruction; never include in a release
+/dashboard/local_data/

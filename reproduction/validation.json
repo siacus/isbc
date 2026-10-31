@@ -1,0 +1,28 @@
+{
+  "component_unit_tests": 19,
+  "dashboard_unit_tests": 24,
+  "training_cli_round_trips": 39,
+  "ablation_controller_cases": 2,
+  "pheme_ols_specifications": 20,
+  "pheme_max_prediction_difference": 5.107e-15,
+  "pheme_bootstrap_identical": true,
+  "mixed_reconstructed_rows": 111000,
+  "mixed_ready_and_labels_byte_hashes_match": true,
+  "full_training_rerun": false,
+  "fresh_install_verified": false,
+  "rf_refit": false,
+  "dashboard_bundles": {
+    "agnews_qwen": {
+      "rows": 127600,
+      "bits": 16,
+      "public_text_included": false,
+      "local_reconstruction_all_values_match": true
+    },
+    "pheme_qwen": {
+      "rows": 5802,
+      "bits": 16,
+      "public_text_included": false,
+      "local_reconstruction_all_values_match": true
+    }
+  }
+}

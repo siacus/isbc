@@ -1,0 +1,490 @@
+{
+  "download-agnews": {
+    "description": "Download and prepare the full AG News corpus.",
+    "prerequisites": "Network access to the dataset host.",
+    "commands": [
+      [
+        "python",
+        "download_agnews.py"
+      ]
+    ]
+  },
+  "agnews-backbones": {
+    "description": "Match the five AG News representations and evaluate retained reference metrics.",
+    "prerequisites": "All five full-corpus AG News configurations trained and encoded; saved splits restored.",
+    "commands": [
+      [
+        "python",
+        "compare_factor_run_collection.py",
+        "--run",
+        "qwen=runs/agnews_qwen_all_fixed_balance",
+        "--run",
+        "minilm=runs/agnews_minilm_all_fixed_balance",
+        "--run",
+        "nvidia=runs/agnews_nvidia_all_fixed_balance",
+        "--run",
+        "harrier=runs/agnews_harrier_all_fixed_balance",
+        "--run",
+        "embeddinggemma2=runs/agnews_embeddinggemma2_all_fixed_balance",
+        "--input_stem",
+        "agnews_all_ready",
+        "--labels",
+        "data/agnews/agnews_all.csv",
+        "--label_col",
+        "label_name",
+        "--output_dir",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name",
+        "--seed",
+        "1234",
+        "--predictive_test_size",
+        "0.2",
+        "--extract_raw_embeddings"
+      ],
+      [
+        "python",
+        "plot_backbone_bit_matching_network.py",
+        "--comparison_json",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name/factor_collection_comparison.json"
+      ],
+      [
+        "python",
+        "analyze_backbone_profile_partitions.py"
+      ]
+    ]
+  },
+  "agnews-structure": {
+    "description": "Within-Qwen bit associations and document conjunctions.",
+    "prerequisites": "Qwen 16/6 encoding and AG News label file.",
+    "commands": [
+      [
+        "python",
+        "report_bit_structure.py",
+        "--run_dir",
+        "runs/agnews_qwen_all_fixed_balance"
+      ],
+      [
+        "python",
+        "analyze_agnews_crosscutting_communities.py",
+        "--run-dir",
+        "runs/agnews_qwen_all_fixed_balance",
+        "--labels-csv",
+        "data/agnews/agnews_all.csv",
+        "--output-dir",
+        "runs/agnews_qwen_all_fixed_balance/bit_structure"
+      ]
+    ]
+  },
+  "agnews-capacity": {
+    "description": "Profile matching across retained widths and activity targets.",
+    "prerequisites": "All six Qwen capacity configurations trained, encoded and compared; see docs/reproduction.md.",
+    "commands": [
+      [
+        "python",
+        "compare_qwen_profile_capacities.py",
+        "--graphs"
+      ]
+    ]
+  },
+  "agnews-geometry": {
+    "description": "Global and local geometric preservation.",
+    "prerequisites": "Capacity comparison artifacts and raw/code matrices from the retained configurations.",
+    "commands": [
+      [
+        "python",
+        "analyze_qwen_compression_extensions.py"
+      ],
+      [
+        "python",
+        "analyze_qwen_geometry_sensitivity.py"
+      ],
+      [
+        "python",
+        "analyze_qwen_nearest_profile.py"
+      ],
+      [
+        "python",
+        "analyze_qwen_bidirectional_local_geometry.py"
+      ]
+    ]
+  },
+  "agnews-clustering": {
+    "description": "Clustering, residual entropies and supplementary controls.",
+    "prerequisites": "Full Qwen encoding, raw embeddings, conjunction documents; three ISBC seeds for the stability diagnostic.",
+    "commands": [
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "32",
+        "--community",
+        "0"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "32",
+        "--community",
+        "2"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "64",
+        "--community",
+        "0"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "64",
+        "--community",
+        "2"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "256",
+        "--community",
+        "0"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_tech_market.py",
+        "--n-clusters",
+        "256",
+        "--community",
+        "2"
+      ],
+      [
+        "python",
+        "analyze_agnews_kmeans_bit_residuals.py"
+      ],
+      [
+        "python",
+        "analyze_agnews_l2_normalized_kmeans_robustness.py"
+      ],
+      [
+        "python",
+        "analyze_agnews_label_purity_support_matched.py"
+      ],
+      [
+        "python",
+        "analyze_agnews_profile_partition_seed_stability.py"
+      ],
+      [
+        "python",
+        "summarize_agnews_kmeans_business_crosscutting.py"
+      ],
+      [
+        "python",
+        "recipes/review_controls_20261030/cluster_nulls.py"
+      ]
+    ]
+  },
+  "agnews-ablation": {
+    "description": "Summarize the full-corpus objective ablation.",
+    "prerequisites": "All 18 saved loss-ablation configurations trained and encoded; common split restored.",
+    "commands": [
+      [
+        "python",
+        "analyze_agnews_loss_ablation.py"
+      ]
+    ]
+  },
+  "external-setup": {
+    "description": "Fetch the pinned original implementations of the two external sparse encoders.",
+    "prerequisites": "Network access to their public repositories.",
+    "commands": [
+      [
+        "bash",
+        "prepare_external_method_packages.sh"
+      ]
+    ]
+  },
+  "external-encoders": {
+    "description": "Fit and compare the adapted encoders on all 127,600 documents.",
+    "prerequisites": "Full AG News/Qwen embeddings, codes and common split; external-setup completed.",
+    "commands": [
+      [
+        "python",
+        "benchmark_agnews_external_methods.py",
+        "--output_dir",
+        "runs/agnews_embedding_comparison/external_sparse_encoders_qwen_k16_full127600",
+        "--bootstrap_draws",
+        "2000"
+      ],
+      [
+        "python",
+        "compare_external_sparse_profiles.py",
+        "--run_dir",
+        "runs/agnews_embedding_comparison/external_sparse_encoders_qwen_k16_full127600",
+        "--max_profiles",
+        "10",
+        "--null_draws",
+        "1000",
+        "--min_docs",
+        "30"
+      ],
+      [
+        "python",
+        "recipes/external_top6_20261030/analyze.py"
+      ]
+    ]
+  },
+  "external-densities": {
+    "description": "Plot retained probability, logit and rank-density figures.",
+    "prerequisites": "Completed external-encoders workflow.",
+    "commands": [
+      [
+        "python",
+        "recipes/external_top6_20261030/plots.py"
+      ],
+      [
+        "python",
+        "recipes/external_bit_singlepanel_20261030/plots.py"
+      ],
+      [
+        "python",
+        "recipes/hypothesaes_rank_simplify_20261030/prepare.py"
+      ],
+      [
+        "python",
+        "recipes/isbc_full_probability_density_20261030/prepare.py"
+      ]
+    ]
+  },
+  "itq-controls": {
+    "description": "Native/top-6 ITQ and continuous PCA controls.",
+    "prerequisites": "AG News reference-code cache from the five-backbone comparison, plus existing cluster assignments.",
+    "commands": [
+      [
+        "python",
+        "recipes/review_controls_20261030/analyze.py"
+      ],
+      [
+        "python",
+        "runs/agnews_embedding_comparison/itq_activity_interpretation/recover_scores.py"
+      ],
+      [
+        "python",
+        "runs/agnews_embedding_comparison/itq_activity_interpretation/analyze.py"
+      ]
+    ]
+  },
+  "backbone-communities": {
+    "description": "Cluster positive matched-bit associations and display negative links.",
+    "prerequisites": "agnews-backbones completed.",
+    "commands": [
+      [
+        "python",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/audit.py"
+      ],
+      [
+        "python",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/positive_only.py"
+      ],
+      [
+        "python",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/characterize_positive.py"
+      ],
+      [
+        "python",
+        "runs/agnews_embedding_comparison/all_fixed_balance_label_name/bit_matching_polarity_audit/resolution_and_internal_patterns/analyze.py"
+      ]
+    ]
+  },
+  "cross-corpus": {
+    "description": "Qwen binary evidence for every retained annotation target.",
+    "prerequisites": "Retained Qwen encodings and prepared labels; restore-splits first.",
+    "commands": [
+      [
+        "python",
+        "analysis/prepare_cross_corpus_registry.py"
+      ],
+      [
+        "python",
+        "recipes/cross_corpus_binary/build_evidence.py"
+      ],
+      [
+        "python",
+        "recipes/cross_corpus_binary/plot_profiles.py"
+      ],
+      [
+        "python",
+        "runs/profile_single_bit_contrasts_qwen_20261030/analyze.py"
+      ]
+    ]
+  },
+  "mixed-new-documents-prepare": {
+    "description": "Freeze reference evidence and select eligible additional documents.",
+    "prerequisites": "Original Mixed draw, fitted Qwen checkpoint/tokenizer, frozen profile manifest and source collections. This recipe intentionally refuses an existing copied best/ directory.",
+    "commands": [
+      [
+        "python",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500/prepare.py"
+      ]
+    ]
+  },
+  "mixed-new-documents-encode": {
+    "description": "Encode new documents with the frozen Mixed encoder.",
+    "prerequisites": "mixed-new-documents-prepare completed.",
+    "commands": [
+      [
+        "python",
+        "binary_factors_train.py",
+        "--mode",
+        "encode",
+        "--input",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500/encoding_input.csv",
+        "--output_dir",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500",
+        "--checkpoint",
+        "best",
+        "--device",
+        "auto",
+        "--max_length",
+        "256",
+        "--batch_size",
+        "16"
+      ]
+    ]
+  },
+  "mixed-new-documents-analyze": {
+    "description": "Evaluate profile recurrence and three-bit contexts.",
+    "prerequisites": "Frozen encoding completed; original reference artifacts available.",
+    "commands": [
+      [
+        "python",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500/analyze.py"
+      ],
+      [
+        "python",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500/contexts.py"
+      ],
+      [
+        "python",
+        "runs/mixed_embedding_comparison/inductive_interpretation_500/write_report.py"
+      ]
+    ]
+  },
+  "pheme-extract": {
+    "description": "Extract archived engagement counters, without fitting count models.",
+    "prerequisites": "PHEME archive and prepared ready.csv; restore-splits first.",
+    "commands": [
+      [
+        "python",
+        "analysis/prepare_pheme_engagement.py"
+      ]
+    ]
+  },
+  "pheme-log": {
+    "description": "OLS and variance-split forests on standardized log outcomes, followed by descriptive trees.",
+    "prerequisites": "PHEME Qwen codes, extracted counters, labels, text and exact split. R dependencies installed. ISBC_R_THREADS defaults to 1.",
+    "commands": [
+      [
+        "Rscript",
+        "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/fit_log_models.R"
+      ],
+      [
+        "Rscript",
+        "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/fit_log_trees.R"
+      ],
+      [
+        "Rscript",
+        "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/render_tree_overviews.R"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_log_outcomes/plot_and_report.py"
+      ],
+      [
+        "Rscript",
+        "analysis/pheme_bit_composition.R"
+      ],
+      [
+        "python",
+        "analysis/plot_pheme_bit_composition.py"
+      ]
+    ]
+  },
+  "pheme-tails": {
+    "description": "All-document decile/quartile tails, combinations, keywords and inspection dossiers.",
+    "prerequisites": "PHEME Qwen codes/raw embeddings, extracted counters and split. The report retains historical qualitative readings; no LLM API call.",
+    "commands": [
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/interpretation_audit_20261030/prepare.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/interpretation_audit_20261030/lexical.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/analyze.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/combinations.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/selectivity.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/summarize_combinations.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/content_analysis/prepare.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/content_analysis/write_report.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/charlie_complements/analyze.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/event_followup/analyze.py"
+      ],
+      [
+        "python",
+        "runs/pheme_embedding_comparison/engagement/qwen_engagement_tails_20261031/report.py"
+      ]
+    ]
+  },
+  "scaling": {
+    "description": "Replay cached-embedding AG News optimization at K=16, A=6 for the five backbones.",
+    "prerequisites": "Validated training embedding caches for all five reference configurations; original timings used Apple M2 Max / MPS. This launches timing replays, not source-run replacement.",
+    "commands": [
+      [
+        "python",
+        "benchmark_agnews_optimizer_scaling.py"
+      ],
+      [
+        "python",
+        "summarize_optimization_scaling.py",
+        "--dataset",
+        "agnews"
+      ]
+    ]
+  },
+  "mixed-rebuild": {
+    "description": "Recover and verify the original 111,000-document Mixed fitting corpus.",
+    "prerequisites": "All original prepared source collections. The recipe uses historical IDs plus text hashes and refuses changes or ambiguity.",
+    "commands": [
+      [
+        "python",
+        "analysis/rebuild_mixed.py"
+      ]
+    ]
+  }
+}

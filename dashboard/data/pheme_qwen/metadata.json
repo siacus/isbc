@@ -1,0 +1,7 @@
+{
+  "model_name": "Qwen/Qwen3-Embedding-0.6B",
+  "k_factors": 16,
+  "target_active": 6.0,
+  "checkpoint": "best",
+  "seed": 1234
+}

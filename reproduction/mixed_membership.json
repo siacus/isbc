@@ -1,0 +1,6 @@
+{
+  "rows": 111000,
+  "ready_sha256": "3b8b0cfe744118404d5655fbf815ce27c654459edfe5daa67234e05bbeaf3ef7",
+  "labels_sha256": "77b8bb04a47478b1353a3f262d6ab6e94ad3688e1d56defe9e414d87e54b4bf8",
+  "purpose": "Historical fitting membership, not a newly generated random draw. Match source_id and verify text hash before fitting or excluding training documents."
+}

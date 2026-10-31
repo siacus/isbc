@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "dataset": "AG News",
+  "dataset_source": "https://huggingface.co/datasets/fancyzhx/ag_news",
+  "rows": 127600,
+  "bits": [
+    "bit_00",
+    "bit_01",
+    "bit_02",
+    "bit_03",
+    "bit_04",
+    "bit_05",
+    "bit_06",
+    "bit_07",
+    "bit_08",
+    "bit_09",
+    "bit_10",
+    "bit_11",
+    "bit_12",
+    "bit_13",
+    "bit_14",
+    "bit_15"
+  ],
+  "labels": [],
+  "file": "encoded_agnews_qwen.csv",
+  "bytes": 4865405,
+  "sha256": "4a6a9db8fe6c024fe9b8e34987f68c5e8224cd960ad4fdee53330600fde6ad9e",
+  "text_hash_file": "text_hashes.csv",
+  "text_hash_sha256": "b4d33cefa6ada328ab082e42c9e27e338845ac550c32295e62756852e0e4dc79",
+  "license_notice": "DATA_LICENSE.md",
+  "content": "IDs and fitted binary codes; PHEME annotations only. No source text or platform counters.",
+  "sources": [
+    {
+      "repository_relative_path": "runs/agnews_qwen_all_fixed_balance/encoded_agnews_all_ready_best.csv",
+      "sha256": "f821d97b4db935cbc78f6ee8cd30f54c36b8d208911bfb1f83c3d31ea3dbe4a4"
+    }
+  ]
+}

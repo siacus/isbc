@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "dataset": "mixed",
+  "reference_backbone": "qwen",
+  "profile_definition": "Exact 16-bit Qwen hard-code profiles retained by the current Mixed profile-matching report",
+  "profile_threshold": 0.0045,
+  "n_documents": 111000,
+  "n_profiles": 10,
+  "sample_size_per_profile": 500,
+  "sampling": {
+    "without_replacement": true,
+    "global_seed": 1234,
+    "default_seed_in_script": 1234,
+    "algorithm": "Python random.Random.sample",
+    "derived_seed": "first 64 bits of SHA-256 over dataset, backbone, global seed, profile rank, and active bits"
+  },
+  "text_sanitization": {
+    "rule": "Remove characters forbidden by XML 1.0 from every string cell",
+    "reason": "CSV and XLSX must contain the same representable text",
+    "changed_source_cells": 23
+  },
+  "inputs": {
+    "ready": {
+      "path": "data/mixed/mixed_ready.csv",
+      "size_bytes": 36278771,
+      "sha256": "3b8b0cfe744118404d5655fbf815ce27c654459edfe5daa67234e05bbeaf3ef7",
+      "rows": 111000
+    },
+    "labels": {
+      "path": "data/mixed/mixed_labels.csv",
+      "size_bytes": 23711982,
+      "sha256": "77b8bb04a47478b1353a3f262d6ab6e94ad3688e1d56defe9e414d87e54b4bf8",
+      "rows": 111000
+    },
+    "encoded": {
+      "path": "runs/mixed_qwen_all_fixed_balance/encoded_mixed_ready_best.csv",
+      "size_bytes": 60749945,
+      "sha256": "cc34db3c9f7e43d77ac4ec47f4cbd5fa988bbd17823f0496448587b5994e94c7",
+      "rows": 111000
+    },
+    "profile_manifest": {
+      "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_definition/manifest.json",
+      "size_bytes": 3834,
+      "sha256": "e0daf5274755f839d5c15ba95fe9ec823bd882e9be945b3095a6f9d3c1e53195"
+    },
+    "profile_matches": {
+      "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_definition/matches.csv",
+      "size_bytes": 26954,
+      "sha256": "c63c7eb4da61eea0d2046f064f7dfaec84f11bc40f8c952c4b145ebde315ac1e"
+    }
+  },
+  "membership": {
+    "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_membership.csv",
+    "size_bytes": 1304386,
+    "sha256": "4b2be06fffed740c188c13d87dff64771664b2df71c216858ca59c3ddbc9bf2e",
+    "rows": 12739
+  },
+  "profiles": [
+    {
+      "profile_id": "P01",
+      "profile_rank": 1,
+      "profile_code": "1000010010100110",
+      "active_bits": [
+        0,
+        5,
+        8,
+        10,
+        13,
+        14
+      ],
+      "profile_size": 3412,
+      "profile_share": 0.03073873873873874,
+      "global_seed": 1234,
+      "derived_seed": "7709854469348198845",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_01.csv",
+        "size_bytes": 219519,
+        "sha256": "0775e6be4ffdf7e8c1478018fe629e03f50a6da75d121f830ebc614ef1e32c77",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_01.xlsx",
+        "size_bytes": 112838,
+        "sha256": "df1f32708eccf565c1f4fb7721ded22e1557cf9ad4d80c787f0b91c68ca3d458",
+        "rows": 500
+      },
+      "sample_id_sha256": "7209a9e06cb29a3da05b22c500b07e1a15c8879cee5c9acea5c76d2f5017c057"
+    },
+    {
+      "profile_id": "P02",
+      "profile_rank": 2,
+      "profile_code": "1100001010001101",
+      "active_bits": [
+        0,
+        1,
+        6,
+        8,
+        12,
+        13,
+        15
+      ],
+      "profile_size": 1950,
+      "profile_share": 0.01756756756756757,
+      "global_seed": 1234,
+      "derived_seed": "7584557707025564629",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_02.csv",
+        "size_bytes": 851411,
+        "sha256": "7d36128fb4c2a12cf7ed5f8353c553f95447d95b1711866e8664acb435646299",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_02.xlsx",
+        "size_bytes": 360719,
+        "sha256": "d43e1e27fb2928f5fbb14060f3bda8023e6d534a9ce152d07b66f8a1a854797d",
+        "rows": 500
+      },
+      "sample_id_sha256": "6f66f51c8e50f3ec09cdd852ba6ecc7dae3023796450497a2842414089788e52"
+    },
+    {
+      "profile_id": "P03",
+      "profile_rank": 3,
+      "profile_code": "0010011110100001",
+      "active_bits": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        15
+      ],
+      "profile_size": 1946,
+      "profile_share": 0.01753153153153153,
+      "global_seed": 1234,
+      "derived_seed": "197461106000078703",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_03.csv",
+        "size_bytes": 524665,
+        "sha256": "893e86ebea3c8b326409e48d48a82aeb9f10baa6bdd84b3895d6a2827a042a2c",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_03.xlsx",
+        "size_bytes": 263385,
+        "sha256": "39c4dc5f05f5b2a21b8932937639191a8df078e24b28ca3ac743144a217098e5",
+        "rows": 500
+      },
+      "sample_id_sha256": "d6bdd51a6fdc60c972d082c192e9ac510db7a13d0de253eeb86133574e559b73"
+    },
+    {
+      "profile_id": "P04",
+      "profile_rank": 4,
+      "profile_code": "0001100001111000",
+      "active_bits": [
+        3,
+        4,
+        9,
+        10,
+        11,
+        12
+      ],
+      "profile_size": 1794,
+      "profile_share": 0.016162162162162163,
+      "global_seed": 1234,
+      "derived_seed": "4199016018679637377",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_04.csv",
+        "size_bytes": 194403,
+        "sha256": "9f76c50218c3f8a5b601c39c216c28959f0dbcf101b21fe49f1ec62c2771e63b",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_04.xlsx",
+        "size_bytes": 99680,
+        "sha256": "b8474a762233838d69e21df2a50e568e89278712b7dcc0c10446b74895c0571e",
+        "rows": 500
+      },
+      "sample_id_sha256": "ad384e9a52063fffccf7b6cdf59db8c5ea640a1503c9c0fc4e5d3a06ad0dc677"
+    },
+    {
+      "profile_id": "P05",
+      "profile_rank": 5,
+      "profile_code": "0000011101010100",
+      "active_bits": [
+        5,
+        6,
+        7,
+        9,
+        11,
+        13
+      ],
+      "profile_size": 785,
+      "profile_share": 0.007072072072072072,
+      "global_seed": 1234,
+      "derived_seed": "13312083301818829070",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_05.csv",
+        "size_bytes": 357667,
+        "sha256": "1a7489c23156cc872bd5f392a593a1c77dbfe731882a67cee369cfb2fad6209c",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_05.xlsx",
+        "size_bytes": 186185,
+        "sha256": "c358877ec12037f9634819b17ef317a979e13509573e0b9cf7e51aca4489c440",
+        "rows": 500
+      },
+      "sample_id_sha256": "5f61e1107cc8c7d978556dd151cae99402034b290c0e9a76116b343998b8a31a"
+    },
+    {
+      "profile_id": "P06",
+      "profile_rank": 6,
+      "profile_code": "0000100001111000",
+      "active_bits": [
+        4,
+        9,
+        10,
+        11,
+        12
+      ],
+      "profile_size": 708,
+      "profile_share": 0.006378378378378379,
+      "global_seed": 1234,
+      "derived_seed": "6693926098795911535",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_06.csv",
+        "size_bytes": 191548,
+        "sha256": "a8ec58efa7efdfe1f5b7f329b207583818eec164380a29d3143febeb809bcea8",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_06.xlsx",
+        "size_bytes": 99711,
+        "sha256": "28d25c7aebce83a843d46e66c5fe09eca662b10f7e00adf74acab947a91d2c67",
+        "rows": 500
+      },
+      "sample_id_sha256": "d20fee29da88fbef945aa2377f039c71f503ad7422130ce40ef068e86da0302b"
+    },
+    {
+      "profile_id": "P07",
+      "profile_rank": 7,
+      "profile_code": "1000010010110110",
+      "active_bits": [
+        0,
+        5,
+        8,
+        10,
+        11,
+        13,
+        14
+      ],
+      "profile_size": 561,
+      "profile_share": 0.005054054054054054,
+      "global_seed": 1234,
+      "derived_seed": "17092283387190535394",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_07.csv",
+        "size_bytes": 219071,
+        "sha256": "8512f6f9328b4df8663af78091277f4824b943bcec132d73f03b84899a5e9d82",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_07.xlsx",
+        "size_bytes": 111978,
+        "sha256": "be3f01adc7367c112702b55afeedbadb9ecf32a9123f2583aa3eafc4e0bc7b77",
+        "rows": 500
+      },
+      "sample_id_sha256": "7d4dc2c09bcb7bf2901f61bb0338889cf12453b5007f7b3beedf5feb112547b0"
+    },
+    {
+      "profile_id": "P08",
+      "profile_rank": 8,
+      "profile_code": "0001100001110000",
+      "active_bits": [
+        3,
+        4,
+        9,
+        10,
+        11
+      ],
+      "profile_size": 551,
+      "profile_share": 0.004963963963963964,
+      "global_seed": 1234,
+      "derived_seed": "16121190497968463167",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_08.csv",
+        "size_bytes": 193579,
+        "sha256": "72225c06bf39868ce5d21109644235226e13f0da58fa01e47605cacaf13cd91f",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_08.xlsx",
+        "size_bytes": 99866,
+        "sha256": "80761c011a0670e24088420a3ee42b45f7f17f6f345b275eb8cf2cdaa06a5d46",
+        "rows": 500
+      },
+      "sample_id_sha256": "df9f43fb2a23dd460038fe8eb57b85afb8bb12960a22f9d90358fc8ff529fde5"
+    },
+    {
+      "profile_id": "P09",
+      "profile_rank": 9,
+      "profile_code": "0100001010001101",
+      "active_bits": [
+        1,
+        6,
+        8,
+        12,
+        13,
+        15
+      ],
+      "profile_size": 519,
+      "profile_share": 0.004675675675675676,
+      "global_seed": 1234,
+      "derived_seed": "2722952808499939259",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_09.csv",
+        "size_bytes": 912595,
+        "sha256": "c3197155b169720d4f76eec251cf56e853bbde5bf81abc7370a866d720f06978",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_09.xlsx",
+        "size_bytes": 382327,
+        "sha256": "f11eb4a1edd39465c408e444fdecb5cee7036fb92f8114171b20c96bea18e15f",
+        "rows": 500
+      },
+      "sample_id_sha256": "ecb60e97e1ec513ada43119984fcfb2e6b18c6f048055dc502978f034770a227"
+    },
+    {
+      "profile_id": "P10",
+      "profile_rank": 10,
+      "profile_code": "0001100001101000",
+      "active_bits": [
+        3,
+        4,
+        9,
+        10,
+        12
+      ],
+      "profile_size": 513,
+      "profile_share": 0.004621621621621622,
+      "global_seed": 1234,
+      "derived_seed": "16411011006709376484",
+      "sample_size": 500,
+      "csv": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_10.csv",
+        "size_bytes": 190531,
+        "sha256": "e86eef609400a1c1a03c11d7d19049ac853b0e3639a13415ab1012eae8a92f09",
+        "rows": 500
+      },
+      "xlsx": {
+        "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/profile_10.xlsx",
+        "size_bytes": 95964,
+        "sha256": "f03ba17543ff9c64b53dbf3ca35fd75180f8d35b6212b07da90d0f358fa49353",
+        "rows": 500
+      },
+      "sample_id_sha256": "49efed79928e29651ff519c29fd42bc2246542d129a5d3d2b6d8b6bf36ff2f48"
+    }
+  ],
+  "readme": {
+    "path": "runs/mixed_embedding_comparison/frozen_profiles_qwen_seed1234/README.md",
+    "size_bytes": 2619,
+    "sha256": "ffe889a815ee5536da29dd6cf6c8eade572460cf924b34029d07ae3ab21e240b"
+  }
+}

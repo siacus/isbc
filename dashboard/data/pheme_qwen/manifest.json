@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "dataset": "PHEME",
+  "dataset_source": "https://doi.org/10.6084/m9.figshare.6392078.v1",
+  "rows": 5802,
+  "bits": [
+    "bit_00",
+    "bit_01",
+    "bit_02",
+    "bit_03",
+    "bit_04",
+    "bit_05",
+    "bit_06",
+    "bit_07",
+    "bit_08",
+    "bit_09",
+    "bit_10",
+    "bit_11",
+    "bit_12",
+    "bit_13",
+    "bit_14",
+    "bit_15"
+  ],
+  "labels": [
+    "label",
+    "veracity",
+    "event",
+    "label_fine"
+  ],
+  "file": "encoded_pheme_qwen.csv",
+  "bytes": 566483,
+  "sha256": "9007070dcd04adcbc5a9a9d64645a5c6ffd0dfab7d181d626224167af9d51c9e",
+  "text_hash_file": "text_hashes.csv",
+  "text_hash_sha256": "7c63a67175367e10e2c0ed27b8939aae4a7c5e6c08cf7200f79e1704d5de836f",
+  "license_notice": "DATA_LICENSE.md",
+  "content": "IDs and fitted binary codes; PHEME annotations only. No source text or platform counters.",
+  "sources": [
+    {
+      "repository_relative_path": "runs/pheme_qwen_fixed_balance/encoded_pheme_ready_best.csv",
+      "sha256": "593cd88e6ab948c63592ab26d445244d0d367e7532cc60ebcbf20a31f21030ee"
+    },
+    {
+      "repository_relative_path": "data/pheme/pheme_labels.csv",
+      "sha256": "bf2f2453fb3abc7a4774650ff86848fc078dff6c46b7e9df88de9f2f99e573cd"
+    }
+  ]
+}

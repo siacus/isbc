@@ -1,0 +1,15 @@
+torch==2.13.0
+transformers @ https://github.com/huggingface/transformers/archive/e598fbad926d80bc356c0c4d96532030e3dfdb62.zip
+datasets==5.0.1
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.17.1
+scikit-learn==1.9.0
+statsmodels==0.15.0
+matplotlib==3.11.1
+adjustText==1.4.0
+networkx==3.6.1
+python-igraph==1.0.0
+leidenalg==0.12.0
+tqdm==4.70.0
+requests==2.34.2
