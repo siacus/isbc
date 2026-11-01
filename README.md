@@ -122,7 +122,7 @@ python analysis/export_dashboard_data.py --verify
 | Code width, activity and geometry | `agnews-capacity`, `agnews-geometry` |
 | Learning-objective ablations | `agnews-ablation`, after training the recorded variants |
 | Correspondence across embedding backbones | `agnews-backbones`, `backbone-communities` |
-| Alternative encoders, PCA and ITQ | `external-setup`, `external-encoders`, `external-densities`, `itq-controls` |
+| Alternative encoders, PCA and ITQ | `external-setup`, `external-encoders`, `external-densities`, `itq-controls`, `itq-reconstruction` |
 | Other annotated corpora | `cross-corpus` |
 | Mixed fitting sample and new-document analysis | `mixed-rebuild`, `mixed-new-documents-*` |
 | PHEME prediction on log outcomes | `pheme-extract`, `pheme-log` |

@@ -26,6 +26,41 @@ corpus and evaluation split.
 The cross-corpus workflow uses Qwen hard codes and the annotation specifications
 in `reproduction/cross_corpus_targets.json`.
 
+## ITQ reconstruction
+
+`evaluate_itq_reconstruction.py` evaluates the fixed inverse PCA/rotation map
+and a separately refitted affine decoder for native and top-6 ITQ codes on the
+full AG News corpus. It uses the existing fit; it does not rerun PCA or ITQ.
+The `itq-controls` workflow runs it after recovering the fitted transformation.
+With `itq_scores.npz` and the raw embeddings already available, run only:
+
+```sh
+python reproduce.py run itq-reconstruction --execute
+```
+
+The inverse is `mu + (2B - 1) @ R.T @ P`, where the rows of `P` are PCA
+axes and `R` rotates the centered PCA scores. Top-6 changes only the code,
+keeping the reconstruction map fixed. Unit signed amplitudes are used with
+no fitted scaling or intercept adjustment. OLS separately estimates an affine
+map from each fixed code to the original embedding space. Both use the full
+corpus mean-baseline error: `NMSE = SSE / SST`, `R2 = 1 - NMSE`.
+
+Outputs are `metrics.csv`, `protocol.json`, and `report.md` under
+`runs/agnews_embedding_comparison/itq_activity_interpretation/inverse_reconstruction/`.
+The paper's reference results and input hashes are in
+[`reproduction/reference/itq_inverse_reconstruction/`](../reproduction/reference/itq_inverse_reconstruction/).
+For native ITQ, inverse NMSE/R2 are 0.966097/0.033903 and affine OLS R2 is
+0.171789. For top-6, they are 0.969714/0.030286 and 0.151918, respectively.
+The inverse fixes amplitudes in the unwhitened PCA score units; affine OLS
+allows the reconstruction coefficients to adapt to the corpus.
+
+The script checks unique ID alignment, reproduces the cached rotated scores,
+and checks that inverse-transform error decomposes into PCA residual and
+quantization error, allowing for the saved single-precision PCA basis.
+`--raw-embeddings`, `--raw-ids`, `--model`, and `--output-dir` override paths;
+see `python evaluate_itq_reconstruction.py --help` for the remaining options.
+Raw embeddings and model caches are generated locally and are not redistributed.
+
 ## Mixed-domain sample
 
 The Mixed fitting corpus contains 111,000 documents.

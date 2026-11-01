@@ -21,13 +21,18 @@
   },
   {
     "path": "README.md",
-    "bytes": 8194,
-    "sha256": "cb05bd248b402f31112a569edad398b502edd132bba011ba25c2c6c777f06bab"
+    "bytes": 8216,
+    "sha256": "e3ccc8014c17e325e3749219dd87ec1b9132323e90f4ab0a54bbbd9d1fdc98b4"
   },
   {
     "path": "THIRD_PARTY.md",
     "bytes": 1384,
     "sha256": "6f1fac3e3f2a7108a6a559e586a580828fb934620ee4b138f328e5a5b13fb8b5"
+  },
+  {
+    "path": "analysis.py",
+    "bytes": 1643,
+    "sha256": "a73e8dd985de144c93623535477f93484e794f639bf9ce3fc22adac727e7bd26"
   },
   {
     "path": "analysis/export_dashboard_data.py",
@@ -88,11 +93,6 @@
     "path": "analysis/rebuild_mixed.py",
     "bytes": 3470,
     "sha256": "d797e286c35d92003f2d9897ce667dbf9cddb5e4cf80959d97e12bb4f8efaa9c"
-  },
-  {
-    "path": "analysis.py",
-    "bytes": 1643,
-    "sha256": "a73e8dd985de144c93623535477f93484e794f639bf9ce3fc22adac727e7bd26"
   },
   {
     "path": "analysis_reporting.py",
@@ -621,8 +621,8 @@
   },
   {
     "path": "docs/reproduction.md",
-    "bytes": 5342,
-    "sha256": "89fbbf628284d18c60233b1ebdf3a1537c70a77eb51dd75e21bebba7f9cd130b"
+    "bytes": 7329,
+    "sha256": "230f9c1b5467412be0403838766a85323ef7d100f52a83f78b58b384814bda7d"
   },
   {
     "path": "docs/scope.md",
@@ -678,6 +678,11 @@
     "path": "download_tweeteval.py",
     "bytes": 7319,
     "sha256": "4a31fdd473ccfa46dfede435195fed8de89eaff2c188340b0c8d76b1659961f5"
+  },
+  {
+    "path": "evaluate_itq_reconstruction.py",
+    "bytes": 9811,
+    "sha256": "f9e8560e41050fde195c0ac2f9683fc2fd4ffc5681db961dcc1e7d949f4943ac"
   },
   {
     "path": "extract_raw_embeddings.py",
@@ -850,6 +855,21 @@
     "sha256": "b491b895377b0a8e6dde475fd94d83925d79e53da50974d6bc98048a3a90f681"
   },
   {
+    "path": "reproduction/reference/itq_inverse_reconstruction/metrics.csv",
+    "bytes": 633,
+    "sha256": "17d582a24e20a27f5836dc78e28377b01efe1fcb62c91866e555a8e3a686785b"
+  },
+  {
+    "path": "reproduction/reference/itq_inverse_reconstruction/protocol.json",
+    "bytes": 1172,
+    "sha256": "9389c7ec26a9cf3abc23a51df3322f444e5f5e68a046f2b637a0278fed49b05e"
+  },
+  {
+    "path": "reproduction/reference/itq_inverse_reconstruction/report.md",
+    "bytes": 726,
+    "sha256": "0b8f62b890375c7d8c92cef53c01af140c37c42900ac5b31135f7f97f2e5355e"
+  },
+  {
     "path": "reproduction/reference/pheme/metrics.csv",
     "bytes": 4797,
     "sha256": "91cf5e348a9b4efb770d3d02e692959c9e37ad3043fc8884a44575712a75a4f0"
@@ -866,8 +886,8 @@
   },
   {
     "path": "reproduction/source_manifest.json",
-    "bytes": 44875,
-    "sha256": "26085b622c626dd0e9f9327ec2e950f030f2e862e4234c5931adf1ff2c8ae18e"
+    "bytes": 45185,
+    "sha256": "648259b77cf6501d1631a1276115250258022576a4a8124547443e410246f15f"
   },
   {
     "path": "reproduction/splits/20ng_embedding_comparison/all_fixed_balance_label_coarse/predictive_split.csv",
@@ -1041,8 +1061,8 @@
   },
   {
     "path": "reproduction/workflows.json",
-    "bytes": 14734,
-    "sha256": "fc0595f91bce4327e42a7921871ecd03c3e7e2b5be459d95418ced5a5fc3a31a"
+    "bytes": 15239,
+    "sha256": "2b02e2233b77e01991de770b448aaab27b5da966734c03d4ea9973e3fbe15606"
   },
   {
     "path": "reproduction_paths.py",

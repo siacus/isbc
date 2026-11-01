@@ -271,6 +271,10 @@
       ],
       [
         "python",
+        "evaluate_itq_reconstruction.py"
+      ],
+      [
+        "python",
         "runs/agnews_embedding_comparison/itq_activity_interpretation/analyze.py"
       ]
     ]
@@ -484,6 +488,16 @@
       [
         "python",
         "analysis/rebuild_mixed.py"
+      ]
+    ]
+  },
+  "itq-reconstruction": {
+    "description": "Fixed inverse-transform and affine OLS reconstruction of native/top-6 ITQ codes.",
+    "prerequisites": "Full AG News raw Qwen embeddings and IDs, plus itq_scores.npz from the ITQ recover_scores.py procedure. No labels or clustering artifacts are required for this evaluation.",
+    "commands": [
+      [
+        "python",
+        "evaluate_itq_reconstruction.py"
       ]
     ]
   }

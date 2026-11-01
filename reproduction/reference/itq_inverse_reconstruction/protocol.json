@@ -1,0 +1,19 @@
+{
+  "n_documents": 127600,
+  "n_bits": 16,
+  "top_k": 6,
+  "inverse_transform": "X_hat = mu + (2 B - 1) R.T P; V=(X-mu)P.T; P rows are PCA directions.",
+  "decoder": "Fixed inverse of the fitted rotation and PCA projection; signed unit amplitudes, no fitted rescaling or intercept correction.",
+  "top_k_rule": "Use the same fixed inverse with exactly the top-k signed rotated scores active; stable sorting resolves ties by coordinate index.",
+  "fitting": "No new encoder or PCA/rotation fit. OLS refits an affine decoder to each fixed code on all documents.",
+  "normalization": "NMSE=SSE / sum_i ||X_i - corpus_mean||^2; R2=1-NMSE. Raw unnormalized embeddings.",
+  "max_saved_score_reproduction_error": 0.0,
+  "pca_orthogonality_error": 1.3522907309493348e-06,
+  "source_files": {
+    "raw_embeddings_agnews_all_ready_best.npy": "e3557f8848b542ea0db801a53f28a58a8ede499a8ec2780f5d9c458e71a55fd1",
+    "raw_embeddings_agnews_all_ready_best_ids.csv": "e8595c441937212cdc252edee272e4e1137916c039d6d095ee85cb6253b11011",
+    "itq_scores.npz": "27135eed6ee5380be6d216433567871fce0af05c349dcdf74722562395632d24"
+  },
+  "numpy_version": "2.4.6",
+  "pandas_version": "3.0.5"
+}
